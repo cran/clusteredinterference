@@ -11,6 +11,7 @@ library(clusteredinterference)
 data("toy_data") 
 
 ## ------------------------------------------------------------------------
+suppressWarnings(RNGversion("3.5.0")) ## For backwards compatibility 
 set.seed(1113)
 causal_fx <- policyFX(
   data = toy_data,
